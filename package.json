@@ -24,7 +24,9 @@
         "build": "craco build",
         "test": "craco test",
         "eject": "react-scripts eject",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "test:noWatch": "yarn run test -- --watchAll=false",
+        "lint": "eslint --fix"
     },
     "eslintConfig": {
         "extends": [
