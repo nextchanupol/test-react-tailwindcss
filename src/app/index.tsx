@@ -8,14 +8,12 @@ const App: FC = () => {
     <div className='App'>
       <div className='tw-m-3'>
         <div className='tw-mt-4'>
-          <CommonButton color={'danger'}>
+          <CommonButton color={'danger'} isDisabled>
             <img src={'https://via.placeholder.com/100'} />
           </CommonButton>
         </div>
         <div className='tw-mt-4'>
-          <CommonButton color={'danger'}>
-            Test
-          </CommonButton>
+          <CommonButton color={'danger'}>Test</CommonButton>
         </div>
         <div className='tw-mt-4'>
           <CommonButton

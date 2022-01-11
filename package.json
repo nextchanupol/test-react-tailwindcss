@@ -26,7 +26,7 @@
         "eject": "react-scripts eject",
         "prepare": "husky install",
         "test:noWatch": "yarn run test -- --watchAll=false",
-        "lint": "eslint --fix",
+        "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
         "prettier:fix": "prettier --write",
         "prettier:check": "prettier --check ."
     },
@@ -55,7 +55,8 @@
     "lint-staged": {
         "**/*.{js,jsx,ts,tsx}": [
             "yarn prettier:fix",
-            "yarn lint"
+            "yarn lint",
+            "eslint --cache --fix"
         ]
     },
     "husky": {

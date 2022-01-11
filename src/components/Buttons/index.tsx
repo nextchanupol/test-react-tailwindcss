@@ -1,1 +1,1 @@
-export { CommonButton } from "./CommonButton";
+export { CommonButton } from './CommonButton';
